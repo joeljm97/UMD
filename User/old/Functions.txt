@@ -1,0 +1,5 @@
+1.View details
+2.Update details
+3.Generate Reports
+4.View Who accessed your data
+5.Delete data

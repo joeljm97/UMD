@@ -3,7 +3,13 @@
 	<head>
 		<title>Unified Medical Data</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
+    </head>
+    
+    <script>
+        function patient(){
+            alert("patient");
+        }
+    </script>
 	<body>
         
         <div class="container">
@@ -22,13 +28,13 @@
             <div class="left">
                 <h7 id="patient"><b>Patient</b></h7>
                 <div><p>Login to your account to access you medical data</p>
-                    <form action="" class="log-in"
+                    <form action="" class="log-in" onsubmit="patient()"
                         autocomplete="off">
                         <h7 style="text-align: left;">Username</h7><br>
                         <input type="email" placeholder="Enter username" name="uname" required><br>
                         <h7 style="text-align: left;">Password</h7><br>
                         <input type="password" placeholder="Enter password" name="pword" required><br>
-                        <button type="submit">Login</button>  
+                        <button type="submit" >Login</button>  
                         <label>
                         <input type="checkbox" checked="checked" name="remeber"> Remember me
                         </label>  
@@ -90,5 +96,7 @@ echo "Connect Successfully. Host info: " . mysqli_get_host_info($link);
         
         
 		
-	</body>
+    </body>
+    
+
 </html>

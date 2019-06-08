@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UMD</title>
+        <style>
+            body{
+                margin: 0%;
+                padding:0px;
+                background-color:rgb(39, 63, 63);
+            }
+            .docbox{
+                width:700px;
+                height:750px;
+                background: rgb(15, 31, 34);
+                color:#fff;
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform: translate(-50%,-50%);
+                box-sizing:border-box;
+                padding: 70px 30px;
+                border-radius: 5px;
+            }
+            .docbox input,textarea{
+                border:none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline:none;
+                height:40px;
+                color:white;
+                font-size:16px;
+            }
+            .docbox h3{
+                padding-bottom:40px;
+                margin:0px;
+                color: #FF9900;
+                font-size: 30px;
+            }
+            .docbox input[type="submit"]{
+                margin:10px;
+                width:40%;
+                border: none;
+                outline:none;
+                height:40px;
+                background:#fb2525;
+                color:#fff;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+            .docbox input[type="submit"]:hover{
+                background: #FF9900;
+                color:#000;
+            }
+        </style>
+   </head>
+   <body>
+       <div class="docbox">
+       <h3 align="center">Add data to patients record</h3>
+        <form action="add_db.php" method="POST" >
+            Patient id:<br>
+            <input type="email" name="mail"><br><br>
+            Date<br>
+            <input type="date" name="date"><br><br>
+            Medical condition<br>
+            <textarea rows = "5" cols = "50" name = "condition">
+                    
+            </textarea><br><br>
+            Remarks<br>
+            <textarea rows = "5" cols = "50" name = "remarks">
+                    
+            </textarea><br><br>
+            Prescription and Treatment:<br>
+            <textarea rows = "5" cols = "50" name = "medicine">
+                    
+                </textarea><br><br>
+            
+            Priority:<br>
+            <input type="number" name="priority"><br><br>
+
+            <center><input type="submit" value="Upload" onclick="verify()"></center>
+        </form>
+    </div>
+   </body>   
+</html>

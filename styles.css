@@ -10,15 +10,30 @@ body{
   
 }
 ul {
-    list-style-type: none;
-    float: right;
-    padding-right: 20px;
+  padding:0px;
+  list-style-type: none;
   }
 
-  li  {
-      padding: 8px;
-      display: inline-block;
-      color: white;
+  ul li  {
+    float:right;
+    height:50px;
+    width:100px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+  }
+  ul li ul li {
+    display: none;
+  }
+  ul li:hover ul li{
+    display:block;
+  }
+  ul li a{
+    display:block;
+  }
+  ul li a:hover {
+    background-color:rgba(0, 0, 0, 0.342);
+    color:rgb(0, 0, 0);
   }
   
   a {
@@ -157,4 +172,57 @@ ul {
     top: -0.1em;
     vertical-align: middle;
     margin-right: 0.317rem;
+  }
+
+  .loginbox{
+    width:370px;
+    height:450px;
+    background: rgb(42, 42, 42);
+    color:#fff;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    padding: 70px 30px;
+    border-radius: 5px;
+  }
+
+  .loginbox h1{
+    margin: 0px;
+    padding-bottom: 23px;
+    font-size: 32px;
+  }
+   
+  .loginbox p{
+    margin:0;
+    padding-top:6px;
+    font-weight: bold;
+  }
+  .loginbox input{
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .loginbox input{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline:none;
+    height:40px;
+    color:white;
+    font-size:16px;
+  }
+  .loginbox button {
+    width:100%;
+    border: none;
+    outline:none;
+    height:40px;
+    background:#fb2525;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .loginbox button:hover{
+    background: #FF9900;
+    color:#000;
   }
